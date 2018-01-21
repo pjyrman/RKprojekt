@@ -1,0 +1,92 @@
+h1 {
+	color: #003d79;
+	text-align: center;
+}
+
+h2 {
+	color: #003d79;
+	text-align: left;
+}
+
+.mainbody {
+	margin: 20px;
+	background-color: lightskyblue;
+}
+
+.mainbody1 {
+	margin: 50px;
+	background-color: rgb(75, 211, 239);
+}
+
+img {
+	padding-bottom: 8px;
+}
+
+table {
+	background-color: #d6edf8;
+	border-collapse: collapse;
+	border-bottom-color: #dfdfff;
+	border-bottom-width: medium;
+	border
+	=
+	"2";
+}
+
+.nrveerg {
+	text-align: center;
+}
+
+.txtveerg {
+	padding: 4px;
+}
+
+.form1 {
+	background: red;
+}
+
+.gender {
+	background-color: greenyellow;
+	text-decoration-color: aqua;
+}
+
+td {
+	color: #003d79;
+	padding: 4px;
+}
+
+th {
+	color: #003d79;
+	padding: 4px;
+}
+
+.form-control, input {
+	background: #c4ffff;
+	text-decoration-color: #003d79;
+	color: #003d79;
+	padding: 4px;
+}
+
+.tab1 {
+	background: #bbddff;
+}
+
+.tab2 {
+	background: #bbddff;
+	color: #003d79;
+	font-size: 120%;
+	text-align: center
+}
+
+.btn-no {
+	background: #bbddff;
+}
+
+.btn-yes {
+	background: #ff4242;
+}
+
+.modal-body {
+	background: #bbddff;
+	color: #003d79;
+	font-size: 120%;
+}

@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script
+	src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="utils.js"></script>
+<script src="lugejad.js"></script>
+<script src="raamatud.js"></script>
+<script src="laenutused.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css" />
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="MyStyles.css">
+<title>Raamatute, lugejate ja laenuste haldus</title>
+</head>
+<body>
+	<div class="container">
+		<!--  		<h1>Raamatute, lugejate ja laenuste haldus</h1> -->
+		<Table class="table table-striped table-bordered table-hover">
+			<thead>
+				<tr>
+					<th class="tab2">LUGEJAD <br>
+						<button class="btn btn-primary" type="button"
+							onClick="getAllLugejad()">Nimekiri</button>
+						<button class="btn btn-primary" type="button"
+							onClick="addLugejadForm()">Lisa (+)</button>
+					<th class="tab2">RAAMATUD<br>
+						<button class="btn btn-primary" type="button"
+							onClick="getAllRaamatud()">Nimekiri</button>
+						<button class="btn btn-primary" type="button"
+							onClick="addRaamatudForm()">Lisa (+)</button>
+					<th class="tab2">LAENUTSED<br>
+						<button class="btn btn-primary" type="button"
+							onClick="addLaenutamine()">Laenutamine</button>
+						<button class="btn btn-primary" type="button"
+							onClick="addTagastamine()">Tagastamine</button></th>					
+				</tr>
+			</thead>
+		</Table>
+		<div id="content1"></div>
+		<div id="content"></div>
+		<div class='modal fade' id="delete" role='dialog'>
+			<div class='modal-dialog'>
+				<div class='modal-content'>
+					<div class='modal-body' id="deleteBody"></div>
+					<div class='modal-footer'>
+						<div id="buttons"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
