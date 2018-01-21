@@ -1,2 +1,3 @@
-Rakendus, kus on raamatukogu funktsionaalsus (kataloog, laenutus ja tagastamine). Rakendus koosneb kahest osast – UI (JS) ja server (Java). Server peab pakkuma andmeid JSON formaadis üle REST endpointide. UI võib asuda ka serveri komponendi sees, aga peab kasutama andmete kuvamiseks ainult vastavaid REST teenuseid. 
-REST teenused peavad olema kaetud integratsioonitestidega ning omama healthchecki. Rakenduse esitlemisel tuleb põhjendada valitud tehnoloogiaid ja loodud lahendust, sh vajadusel ka koodi selgitama.
+Rakendus, kus on raamatukogu funktsionaalsus (kataloog, laenutus ja tagastamine). Rakendus koosneb kahest osast â€“ UI (JS) ja server (Java). Server peab pakkuma andmeid JSON formaadis Ã¼le REST endpointide. UI vÃµib asuda ka serveri komponendi sees, aga peab kasutama andmete kuvamiseks ainult vastavaid REST teenuseid. 
+TÃ¤ielikult tegemat: REST teenused peavad olema kaetud integratsioonitestidega ning omama healthchecki. 
+
