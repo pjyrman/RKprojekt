@@ -75,6 +75,6 @@ public class Raamatud {
 	@Override
 	public String toString() {
 		return "Raamat [id=" + idRaamatud + ", Autor1=" + autor1Eesnimi+" "+autor1Perenimi  + ", Autor2=" 
-				+ autor2Eesnimi+" "+autor2Perenimi  + "Pealkiri" + pealkiri+ "Aasta"+ aasta+ "]";
+				+ autor2Eesnimi+" "+autor2Perenimi  + "Pealkiri=" + pealkiri+ "Aasta="+ aasta+ "]";
 	}
 }

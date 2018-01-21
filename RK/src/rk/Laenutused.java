@@ -1,9 +1,9 @@
 package rk;
 
 public class Laenutused {
-	int idlaenutused;
-	int idraamatud;
-	int idlugejad;
+	int idLaenutused;
+	int idRaamatud;
+	int idLugejad;
 	String tagastatud;
 
 	public String getTagastatud() {
@@ -15,35 +15,35 @@ public class Laenutused {
 		return this;
 	}
 
-	public int getIdlaenutused() {
-		return idlaenutused;
+	public int getIdLaenutused() {
+		return idLaenutused;
 	}
 
-	public Laenutused setIdlaenutused(int idlaenutused) {
-		this.idlaenutused = idlaenutused;
+	public Laenutused setIdlLaenutused(int idLaenutused) {
+		this.idLaenutused = idLaenutused;
 		return this;
 	}
 
-	public int getIdraamatud() {
-		return idraamatud;
+	public int getIdRaamatud() {
+		return idRaamatud;
 	}
 
-	public Laenutused setIdraamatud(int idraamatud) {
-		this.idraamatud = idraamatud;
+	public Laenutused setIdRaamatud(int idRaamatud) {
+		this.idRaamatud = idRaamatud;
 		return this;
 	}
 
-	public int getIdlugejad() {
-		return idlugejad;
+	public int getIdLugejad() {
+		return idLugejad;
 	}
 
-	public Laenutused setIdlugejad(int idlugejad) {
-		this.idlugejad = idlugejad;
+	public Laenutused setIdLugejad(int idLugejad) {
+		this.idLugejad = idLugejad;
 		return this;
 	}
 
 	@Override
 	public String toString() {
-		return "Laenutus [raamat=" + idraamatud + ", lugeja=" + idlugejad + "]";
+		return "Laenutus [raamat=" + idRaamatud + ", lugeja=" + idLugejad + "]";
 	}
 }

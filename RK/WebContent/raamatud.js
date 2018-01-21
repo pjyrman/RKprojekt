@@ -5,9 +5,10 @@ function getAllRaamatud() {
 					function(raamatud) {
 						var tableContent = "<h1 id='header'>R A A M A T U D</h1>";
 						tableContent = tableContent
-						+ "<div><table id='example' class='table table-striped table-bordered table-hover'>";
+						+ "<div><table id='raamatud' class='table table-striped table-bordered table-hover'>";
 				tableContent = tableContent
-						+ "<thead>	<tr></tr></thead><td>id</td><td>Autorid</td><td>Pealkiri</td><td>Aasta</td><tbody></div>";
+				+ "<thead><tr><div class='input-group' input class='form-control col-sm-3' type='text' id='raamatudFilter' onkeyup='raamatudFilter()' title='Nimi'></div>" +
+						"<th>id</th><th>Autorid</th><th>Pealkiri</th><th>Aasta</th></tr><thead><tbody>";
 				for (var i = 0; i < raamatud.length; i++) {
 					tableContent = tableContent
 					+ "<tr><td class='col-sm-1'>"
@@ -17,7 +18,7 @@ function getAllRaamatud() {
 					+ raamatud[i].autor2Eesnimi + " "
 					+ raamatud[i].autor2Perenimi + "</td><td>"
 					+ raamatud[i].pealkiri + "</td><td>"
-					+ raamatud[i].aasta + "</td>"
+					+ raamatud[i].aasta + "</td></tr>"
 				}
 				tableContent = tableContent + "</tbody></table></div>";	
 				console.log(tableContent);
@@ -78,3 +79,20 @@ function addRaamatud() {
 				});
 	}
 
+function RaamatudFilter() {
+	var raamatud, filter, table, tr, td, i;
+	raamatud = document.getElementById("raamatudFilter");
+	filter = raamatud.value;
+	table = document.getElementById("example");
+	tr = table.getElementsByTagName("tr");
+	for (i = 0; i < tr.length; i++) {
+		td = tr[i].getElementsByTagName("td")[0];
+		if (td) {
+			if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+				tr[i].style.display = "";
+			} else {
+				tr[i].style.display = "none";
+			}
+		}
+	}
+}
